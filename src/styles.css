@@ -1,3 +1,47 @@
 body {
   font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+pre {
+  background-color: #1c1c1c;
+  color: #bada55;
+  padding: 4px;
+  word-break: break-all;
+  margin: 2px;
+  white-space: pre-wrap;
+  width: 100%;
+  max-width: 22%;
+}
+
+@media screen and (max-width: 640px) {
+  pre {
+    max-width: 45%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  pre {
+    max-width: 100%;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ccc;
+}
+
+td,
+th {
+  border: 1px solid white;
+  padding: 8px;
+  text-align: left;
+  color: black;
+}
+
+#products,
+#carts {
+  display: flex;
+  flex-wrap: wrap;
 }

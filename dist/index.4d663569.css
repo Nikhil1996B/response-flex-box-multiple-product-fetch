@@ -1,5 +1,47 @@
 body {
+  box-sizing: border-box;
   font-family: sans-serif;
+}
+
+pre {
+  color: #bada55;
+  word-break: break-all;
+  white-space: pre-wrap;
+  background-color: #1c1c1c;
+  width: 100%;
+  max-width: 22%;
+  margin: 2px;
+  padding: 4px;
+}
+
+@media screen and (width <= 640px) {
+  pre {
+    max-width: 45%;
+  }
+}
+
+@media screen and (width <= 520px) {
+  pre {
+    max-width: 100%;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  background-color: #ccc;
+  width: 100%;
+}
+
+td, th {
+  text-align: left;
+  color: #000;
+  border: 1px solid #fff;
+  padding: 8px;
+}
+
+#products, #carts {
+  flex-wrap: wrap;
+  display: flex;
 }
 
 /*# sourceMappingURL=index.4d663569.css.map */
